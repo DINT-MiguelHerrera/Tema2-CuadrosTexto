@@ -7,12 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="160,90,0,0" TextWrapping="Wrap" Text="Nombre" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,160,0,0" TextWrapping="Wrap" Text="Apellido" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="160,230,0,0" TextWrapping="Wrap" Text="Edad" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="160,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="24"/>
-        <TextBox HorizontalAlignment="Left" Margin="160,181,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="24"/>
-        <TextBox HorizontalAlignment="Left" Margin="160,251,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="24"/>
+        <TextBlock x:Name="textoNombre" HorizontalAlignment="Left" Margin="160,90,0,0" TextWrapping="Wrap" Text="Nombre" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textoApellido" HorizontalAlignment="Left" Margin="160,160,0,0" TextWrapping="Wrap" Text="Apellido" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textoEdad" HorizontalAlignment="Left" Margin="160,230,0,0" TextWrapping="Wrap" Text="Edad" VerticalAlignment="Top"/>
+        <TextBox x:Name="recuadroEscrituraNombre" HorizontalAlignment="Left" Margin="160,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="24" KeyDown="AyudaNombre_KeyDown"/>
+        <TextBox x:Name="recuadroEscrituraApellido" HorizontalAlignment="Left" Margin="160,181,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="24" KeyDown="AyudaApellido_KeyDown"/>
+        <TextBox x:Name="recuadroEscrituraEdad" HorizontalAlignment="Left" Margin="160,251,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="24" KeyDown="validarEdad_KeyDown"/>
+        <TextBlock x:Name="ayudaNombre" HorizontalAlignment="Left" Margin="317,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="24"/>
+        <TextBlock x:Name="ayudaApellido" HorizontalAlignment="Left" Margin="317,181,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="24"/>
+        <TextBlock x:Name="validarEdad" HorizontalAlignment="Left" Margin="317,251,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="24"/>
 
     </Grid>
 </Window>
